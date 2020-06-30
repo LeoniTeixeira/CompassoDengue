@@ -21,7 +21,7 @@
                 <img class="logo-header rounded p-3" src="/estatico/img/logo.png" alt="Logo da prefeitura de Mogi Mirim">
         
                 <div class="nav justify-content-center align-self-center">
-                    <a class="btn-principal nav-item btn m-1" href="/home">Voltar</a>                        
+                    <a class="btn-principal nav-item btn m-1" href="/denuncia-consulta">Voltar</a>                        
                 </div>                
             </nav>
         </header>
@@ -37,19 +37,19 @@
                 <div class="row">
                     <div class="col-md-6 form-group">
                         <label for="nomeCidadao">Nome</label>
-                        <input type="text" class="form-control" id="nomeCidadao" name="nomeCidadao"
+                        <input type="text" class="form-control input-form" id="nomeCidadao" name="nomeCidadao"
                             value="${data.denuncia.cidadao}" readonly />
                     </div>
 
                     <div class="col-md-6 form-group ">
                         <label for="cpfCidadao">CPF</label>
-                        <input type="text" class="form-control" id="cpfCidadao" name="cpfCidadao"
+                        <input type="text" class="form-control input-form" id="cpfCidadao" name="cpfCidadao"
                             value="${data.denuncia.cpf}" readonly />
                     </div>
 
                     <div class="col-md-6 form-group ">
                         <label for="telefoneCidadao">Telefone</label>
-                        <input type="text" class="form-control" id="telefoneCidadao" name="telefoneCidadao"
+                        <input type="text" class="form-control input-form" id="telefoneCidadao" name="telefoneCidadao"
                             value="${data.denuncia.telefone}" readonly />
                     </div>
                 </div>
@@ -59,13 +59,13 @@
                 <div class="row">
                     <div class="col-md-6 form-group">
                         <label for="ruaDenuncia">Rua</label>
-                        <input type="text" class="form-control" id="ruaDenuncia" name="ruaDenuncia"
+                        <input type="text" class="form-control input-form" id="ruaDenuncia" name="ruaDenuncia"
                             value="${data.denuncia.rua}" readonly />
                     </div>
 
                     <div class="col-md-6 form-group">
                         <label for="bairroDenuncia">Bairro</label>
-                        <input type="text" class="form-control" id="bairroDenuncia" name="bairroDenuncia"
+                        <input type="text" class="form-control input-form" id="bairroDenuncia" name="bairroDenuncia"
                             value="${data.denuncia.bairro}" readonly />
                     </div>
                 </div>
@@ -75,15 +75,15 @@
                         <select class="custom-select form-group" name="status">
                             <option>${data.denuncia.status}</option>
                             <option value="Pendente">Pendente</option>
-                            <option value="Em andanmento">Em andanmento</option>
+                            <option value="Em andamento">Em andamento</option>
                             <option value="Resolvido">Resolvido</option>
                         </select>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-4 col-lg-2">
-                        <button type="submit" class="btn btn-primary btn-lg btn-block" onsubmit="unmask()">Salvar</button>
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <button type="submit" class="btn btn-custom btn-lg btn-block" onsubmit="unmask()">Salvar</button>
                     </div>
                 </div>
             </form>

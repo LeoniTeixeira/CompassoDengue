@@ -11,12 +11,6 @@
     text-decoration: none;
 }
 
-.btn-custom {
-    color: #fff;
-    background-color: #f05555;
-}
-
-
 .img-banner {
     background: url('/estatico/img/banner.jpg');    
     background-size: cover;
@@ -51,6 +45,7 @@
     text-transform: uppercase;
     display: block;
     background-color: whitesmoke;
+    margin: 0 2px;
 }
 
 .caixa.active {
